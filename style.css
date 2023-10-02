@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Avenir', sans-serif;
-    height: auto;
 }
+
+body{
+    font-family: 'Avenir', sans-serif;
+    font-size: 16px;
+}
+
 
 button {
     background-color: transparent;
@@ -36,6 +39,189 @@ button:hover {
     background-color: white;
     color: black; 
 }
+
+
+/* HEADER */
+header {
+    background-color: black;  
+    color: white;
+	width: 100vw;
+    position: sticky;
+    top: 0px;
+    z-index: 100;    
+    font-family: 'Avenir', sans-serif;
+    font-weight: 600;
+}
+
+
+header .inner {
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+	width: 95%;
+    height: 4em;
+    margin: auto;
+    align-content: center;
+}
+
+/* logo */
+#logo a {
+	display: flex;
+	justify-content: center;
+}
+
+/* navigation */
+header nav ul{
+	align-items:flex-start;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 2em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+	font-size: 18px;
+}
+
+header nav ul li a:hover {
+	border-bottom: 2px solid white;
+	padding-bottom: 3px;
+}
+
+/* cart */
+#cart{
+	display: flex;
+	justify-content:flex-end;
+    padding-right: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+/* show the page that currently on */
+/* #current_page{
+	border-bottom: 2px solid #000;
+	padding-bottom: 3px;
+} */
+
+/* FOOTER */
+footer{
+	background-color: black;
+	width: 100vw;
+    color: white;
+}
+
+.container{
+	padding: 3em;
+}
+
+/* footer p{
+	display:inline-flex;
+	float: left;
+	align-items: flex-end;
+	align-content: flex-end;
+	margin: -1em 3em;
+} */
+
+/* keep-in-touch section styling*/
+.kit{
+	display: flex;
+	align-items: flex-end;
+    flex-direction: column;
+}
+
+.kit h3{
+	font-size: 96px;
+    font-family: 'Abril Fatface', cursive;
+	margin-bottom: .5em;
+    margin-top: 0;
+    font-weight: 100;
+}
+
+.kit input{
+	padding: 1em;
+	border-radius: 25px;
+	margin-right: 1em;
+	border-style: solid;
+	border-color: #25242C;
+}
+
+#email{
+	width: 25em;
+}
+
+#submit{
+	width: 8em;
+}
+
+
+/* social media icons styling */
+.fa-facebook, .fa-instagram, .fa-envelope{
+	font-size: 1.3em;
+    color: black;
+    padding: 0.3em;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* navigation section styling*/
+.menu, .links{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.8em;
+    text-transform: uppercase;
+	list-style-type: none;
+	text-decoration:none;
+    padding: 1em 0;
+}
+
+
+.menu nav ul li, .links nav ul li {
+    display: inline;
+    margin-left: 1.5em;
+    color: white;
+}
+
+.menu nav ul li a{
+    color: white;
+    text-decoration:none;
+    font-weight: 800;
+}
+
+.line{
+    border-top: 1px solid;
+	position: relative;
+	/* width: 95vw; */
+	padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.line_m{
+    border-top: 1px solid;
+	position: relative;
+	width: 65vw;
+	padding: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_logo img{
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    opacity: 0.6;
+    padding: 3em;
+}
+
+/* HOME PAGE */
 
 /* HERO */
 .hero{
@@ -66,6 +252,7 @@ button:hover {
     align-items: center;
     align-content: center;
 }
+
 .hero_logo {
     z-index: 2;
     width: 100%;
@@ -98,87 +285,12 @@ button:hover {
     position: relative;
 }
 
-
-/* HEADER */
-header {
-    background-color: black;  
-    color: white;
-	width: 100vw;
-    position: sticky;
-    top: 0px;
-    z-index: 100;    
-    font-family: 'Avenir', sans-serif;
-    font-weight: 600;
-}
-
-
-/* use css grid to keep the layout for 3 sections: logo, navigation and contact */
-header .inner {
-    display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    /* gap: 1em; */
-    /* height: 4em; */
-    align-items: center;
-	width: 100%;
-    align-content: center;
-}
-
-/* logo */
-#logo a {
-	display: flex;
-	/* height: 4em; */
-	justify-content: center;
-}
-
-/* navigation */
-header nav ul{
-	align-items:flex-start;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 2em;
-}
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    /* padding: 0.em; */
-    text-transform: uppercase;
-	font-size: 18px;
-}
-header nav ul li a:hover {
-	border-bottom: 2px solid white;
-	padding-bottom: 3px;
-}
-
-/* contact */
-#cart{
-	display: flex;
-	justify-content:flex-end;
-    padding-right: 40px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-
-
-/* show the page the user is currently on */
-/* #current_page{
-	border-bottom: 2px solid #000;
-	padding-bottom: 3px;
-} */
-
-
-
-/* body */
-
+/* CTA */
 .shop{
     display: grid;
 	grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 10vw;
-    /* height: 4em; */
     align-items: center;
 	width: 90vw;
     align-content: center;
@@ -207,7 +319,7 @@ header nav ul li a:hover {
     display: flex;
 }
 
-
+/* TEXTS */
 .scroll_container div{
     display: grid;
 	width: 100vw;
@@ -286,6 +398,7 @@ header nav ul li a:hover {
 	justify-content: space-around;
 }
 
+/* from left to right */
 .primary {
 	animation: primary 5s linear infinite;
 }
@@ -312,12 +425,13 @@ header nav ul li a:hover {
 	}
 }
 
+/* from right to left */
 .primary_right {
-	animation: primary_right 5s linear infinite;
+	animation: primary_right 7s linear infinite;
 }
 
 .secondary_right {
-	animation: secondary_right 5s linear infinite;
+	animation: secondary_right 7s linear infinite;
 }
 
 @keyframes primary_right {
@@ -340,8 +454,7 @@ header nav ul li a:hover {
 
 
 
-
-/* about */
+/* ABOUT */
 .about{
     padding: 0 7.5%;
     display: grid;
@@ -349,15 +462,6 @@ header nav ul li a:hover {
     height: 85vh;
     margin-top: 10em;
 }
-
-/* .about-container{
-    background-color: #69A956;
-    display: flex;
-    flex-direction: column;
-    border-radius: 90px;
-    position: relative;
-    color: white;
-} */
 
 .about-image{
     background-image: url("asset/tea-picker-woman-s-asian-hands-close-up-pretty-tea-picking-girl-plantation.jpg");
@@ -372,8 +476,6 @@ header nav ul li a:hover {
 }
 
 .about-text{
-    /* font-weight: 400; */
-    /* font-size: 100px; */
     width: 100%;
     flex-wrap: wrap;
     display: flex;
@@ -389,7 +491,7 @@ header nav ul li a:hover {
 }
 
 .about-text p{
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .about-text button{
@@ -408,7 +510,7 @@ header nav ul li a:hover {
 .about-listing li {
     background-color: #69A956;
     font-weight: bolder;
-    font-size: 48px;
+    font-size: 30px;
     font-family: 'Avenir', sans-serif;
     margin-bottom: 50px;
     border-radius: 84px ;
@@ -417,37 +519,37 @@ header nav ul li a:hover {
     align-content: center;
 }
 
+/* BEST-SELLINGS */
 .best_selling {
     margin-top: 200px;
     padding: 0 7.5%;
     display: flex;
-
 }
 
 .best_selling-text {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
     position: sticky;
 
 }
 
 .best_selling-text h1 {
-    font-size: 83px;
+    font-size: 5em;
     font-weight: 800;
     font-family: 'Avenir', sans-serif;
+    margin-bottom: 1em;
 }
 
 .best_selling-images {
     display: flex;
 	flex-wrap: wrap;
-	/* column-gap: 1.5em;
-	row-gap: 1.5em; */
     width: 45vw;
 	/* overflow-x: hidden;
 	overflow-y: auto; */
 	justify-content: flex-end;
 }
+
 .best_selling-image {
     background-size: contain;
     background-repeat: no-repeat;
@@ -455,10 +557,12 @@ header nav ul li a:hover {
     width: 100%;
     height: 70vh;
 }
+
 .image1 {
     background-position: left;
     background-image: url("asset/dns_stack1.png");
 }
+
 .image2 {
     background-image: url("asset/dns_stack2.png");
     background-position: right;
@@ -512,3 +616,96 @@ header nav ul li a:hover {
 }
 
 
+/* REVIEWS */
+.review{
+	margin: 10em auto;
+    background-color: #645EA9;
+
+}
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+}
+
+.slider{
+	height: 100%;
+	display: flex;
+	width: 400%;
+	transition: all 0.3s;
+}
+
+.slider section{
+	/* flex-basis: 100%; */
+	padding: 5em;
+    width: 100%;
+    flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider section div{
+	/* margin: 1em; */
+	/* width: 100%; */
+	text-align: center;
+	align-items: flex-start;
+}
+
+.slider section p{
+    font-size: 40px;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* buttons styling */
+.controls .arrow {
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	font-size: 2em;
+	transform: translateY(-50%);
+    color: #fff;
+}
+
+.arrow.left {
+	left: 10%;
+}
+
+.arrow.right{
+	right: 10%;
+}
+
+.controls ul{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.controls ul li{
+	width: 10px;
+	height: 10px;
+	border: 2px solid white;
+	border-radius: 50px;
+	margin: 10px;
+	background:transparent;
+	cursor: pointer;
+}
+
+.controls ul li.selected{
+	background: white;
+}
+
+.fa-star{
+    font-size: 30px;
+    color: #fff;
+    margin: 5px;
+}
