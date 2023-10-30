@@ -79,13 +79,21 @@ header{
 }
 
 header .logo{
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    /* width: 10vw; */
+    /* height: 2em; */
     font-weight: 500;
     text-decoration: none;
     color: #FFF;
     text-align: center;
     display: flex;
 	justify-content: center;
+    z-index: 1111;
+}
+
+header .logo img{
+    height: 3em;
+    margin-bottom: 1em;
 }
 
 /* header .logo:hover{
@@ -106,10 +114,10 @@ header .navbar a{
     text-decoration: none;
 }
 
-/* header .navbar a:hover{
-    filter: drop-shadow(2%);
-    text-shadow: #FFF;
-} */
+header .navbar a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
 
 header .icons{
     display: flex;
@@ -1106,23 +1114,22 @@ footer{
 
 /* PRODUCT PAGE*/
 /* image */
-.image img{
+.image{
+    width: 98vw;
+    height: 86vh;
+    margin: 2vh auto;
+    background-image: url(asset/pexels-ivan-samkov-8952612.jpg);
     background-size: cover;
-    width: 100vw;
-    height: 95vh;
-    position: relative;
-    filter: blur(2px);
 }
 
-.image h1 {
-    color: #69A956;
-    font-size: 128px;
+.image h1{
+    font-size: 5em;
     font-weight: 900;
-    position: absolute;
-    bottom: 48%;
-    left: 35%;
-    margin: auto;
+    color: #FFF;
     display: flex;
+    transform: translateY(35vh);
+    margin-right: 3rem;
+    justify-content: flex-end;
 }
 
 /* navigation */
@@ -1152,7 +1159,7 @@ footer{
 
 .navigation_bar{
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 0%;
     width: 2vw;
     height: 80%;
@@ -1176,7 +1183,7 @@ footer{
 
 .card{
     position: relative;
-    margin: 0 10vw;
+    margin: 10vh 10vw 0;
     width: 80vw;
     height: 80vh;
     display: flex;
@@ -1202,7 +1209,7 @@ footer{
 .card_2 .circle{background-image: url(asset/organic-vegetarian-pile-group-oranges.jpg);}
 .card_3 .circle{background-image: url(asset/white-cosmos-flowers.jpg);}
 .card_4 .circle{background-image: url(asset/close-up-green-leaves-nature.jpg);}
-.card_5 .circle{background-image: url(asset/blacktea.jpg);}
+.card_5 .circle{background-image: url(https://www.mcivers.melbourne/cdn/shop/products/Russian-Caravan20170125_0122.jpg?v=1595483952);}
 .card_6 .circle{background-image: url(asset/close-up-view-natural-seeds-concept.jpg);}
 
 .card:hover .circle{
@@ -1345,24 +1352,20 @@ footer{
 /* ABOUT PAGE*/
 /* title */
 .about{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10rem;
-    margin-top: 5rem;
+    width: 98vw;
+    height: 86vh;
+    margin: 2vh auto;
+    background-image: url(asset/pexels-ivan-samkov-8952399.jpg);
+    background-size: cover;
 }
 
 .about h1{
     font-size: 5em;
     font-weight: 900;
-    color: #30499F;
-    opacity: 0.5;
-}
-
-#main_title{
-    opacity: 1;
+    color: #FFF;
+    display: flex;
+    transform: translateY(35vh);
+    margin-left: 3rem;
 }
 
 /* logo */
@@ -1383,15 +1386,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
-/* @keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-} */
 
 .actual_logo{
     background-image: url(asset/Vector.png);
@@ -1431,9 +1425,10 @@ footer{
     z-index: 99;
 }
 
-.slide_wrapper div{
+.slide_wrapper img{
     background-color: #30499F;
     width: 20em;
+    object-fit: cover;
     aspect-ratio: 4/3;
 }
 
@@ -1594,6 +1589,15 @@ footer{
     padding: 20px 8%;
 }
 
+.contact_container .contact_img{
+    object-fit: cover;
+    filter: brightness(0.6);
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    z-index: -99;
+}
+
 .contact_container .row{
     display: flex;
     justify-content: space-between;
@@ -1604,10 +1608,11 @@ footer{
 .row .col{
     display: flex;
     flex-direction: column;
+    opacity: 1;
 }
 
 .row .left{
-    flex-basis: 35%;
+    flex-basis: 40%;
     min-width: 320px;
     margin-right: 60px;
     background-color: #FEBE4B;
@@ -1741,8 +1746,8 @@ footer{
     width: 100%;
     font-size: 18px;
     padding: 2px 0;
-    /* background-color: #69A956; */
-    color: #000;
+    background-color: transparent;
+    color: #fff;
     border: none;
     border-bottom: 2px solid #FEBE4B;
     outline: none;
@@ -1777,10 +1782,6 @@ footer{
 .input_group button{
     padding: 10px 16px;
     font-size: 18px;
-    /* background-color: #645EA9;
-    border: #BC284A; */
-    border-radius: 25px;
-    outline: none;
     cursor: pointer;
 }
 
