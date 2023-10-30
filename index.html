@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="hero_image">
             </div>
             <div class="logo">
@@ -24,22 +24,20 @@
                     SIP
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <header>
-            <div class="inner">
-                <section id="navigation"> 
-                    <nav>
-                        <ul>
-                            <li><a href="teas.html">OUR TEAS</a></li>                            
-                            <li><a href="about.html">ABOUT US</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </section>
-                <section id="logo"><a href="index.html">LOGO<img src=""></a></section>
-                <section id="cart">CART
-                </section>
+            <input type="checkbox" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <nav class="navbar">
+                <a href="product.html">OUR TEAS</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+            <a href="index.html" class="logo">DIP & SIP<img src=""></a>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
             </div>
         </header>
 
@@ -47,7 +45,7 @@
             <section class="shop">
                 <div class="shop-image">
                     <img src="asset/dns_stackall.png"> 
-
+                    <div class="red_blured_bk"></div>
                 </div>
                 <div class="shop-text">
                     <h1>GET YOUR DAILY SIP OF TEA</h1>
@@ -94,9 +92,10 @@
                 </div>
             </section>
 
-            <section class="about">
-                <div class="about-image">
-                </div>
+            <section id="about">
+                <video autoplay loop muted class="about-video">
+                    <source src="asset/pexels_videos_1324942 (2160p).mp4" type="video/mp4">
+                </video>
                 <div class="about-text">
                     <h1>WHY D&S?</h1>
                     <p>Here at Dip & Sip we believe that every cup of tea counts. 
@@ -114,9 +113,11 @@
             </section>
 
             <section class="best_selling">
-                <div class="best_selling-text">
-                    <h1>ENJOY THE REFRESHING TASTE OF NATURE</h1>
-                    <button role="button">SHOP NOW</button>
+                <div class="scroll_container_best_selling">
+                   <div class="best_selling-text">
+                        <h1>ENJOY THE REFRESHING TASTE OF NATURE</h1>
+                        <button role="button">SHOP NOW</button>
+                    </div> 
                 </div>
                 <div class="best_selling-images">
                     <div class="best_selling-image image1">
@@ -166,43 +167,47 @@
         </main>
 
         <footer>
+            <img class="footer_logo" src="asset/D&S_Logo_1.png">
             <div class="container">
-                <div class="footer_logo">
-                    <img src="asset/D&S_Logo_1.png">
+                <div class="kit_container">
+                    <div class="kit">
+                        <div class="contact-form">
+                            <h3>KEEP IN TOUCH</h3>
+                            <form class="footer_form">
+                                <input type="email" id="email" placeholder="E-mail" required>
+                                <input type="submit" id="submit">
+                            </form>
+                        </div> 
+                        <div class="links">
+                            <nav>
+                                <ul>
+                                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>               
+                        <div class="line_m"></div>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="product.html">Our Teas</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="">FAQS</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="kit">
-                <div class="contact-form">
-                    <h3>KEEP IN TOUCH</h3>
-                    <form>
-                        <input type="email" id="email" placeholder="E-mail" required>
-                        <input type="submit" id="submit">
-                    </form>
-                </div> 
-                <div class="links">
-                    <nav>
-                        <ul>
-                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>               
-                </div>
-                <div class="line_m"></div>
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="product.html">Our Teas</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="">FAQS</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="line"></div>
             </div>
-            
+            <div class="line_wrapper">
+                <div class="line"></div>
+                <div class="reserve_container">
+                    <p>All rights reserved ...</p>
+                </div>
+            </div>
         </footer>
 
         <script src="script.js"></script> 

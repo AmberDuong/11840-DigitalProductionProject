@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DIP&SIP</title>
+        <link rel="icon" type="image/x-icon" href="asset/D&S_Logo_1.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    
+    <body>
+        <header>
+            <input type="checkbox" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <nav class="navbar">
+                <a href="product.html">OUR TEAS</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+            <a href="index.html" class="logo">DIP&SIP<img src=""></a>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+        </header>
+
+        <main>
+            <div class="about">
+                <h1> ABOUT US</h1>
+                <h1> ABOUT US</h1>
+                <h1 id="main_title"> ABOUT US</h1>
+                <h1> ABOUT US</h1>
+                <h1> ABOUT US</h1>
+            </div>
+
+            <div class="about_logo">
+                <div class="logo_container">
+                    <div class="actual_logo"></div>
+                </div>
+            </div>
+
+            <div class="about_info">
+                <div class="slide_wrapper_1 slide_wrapper">
+                    <div class="slide_image_1"></div>
+                </div>
+                <div class="slide_wrapper_2 slide_wrapper">
+                    <div class="slide_image_2"></div>
+                </div>
+                <div class="slide_wrapper_3 slide_wrapper">
+                    <div class="slide_image_3"></div>
+                </div>
+                <div class="slide_wrapper_4 slide_wrapper">
+                    <div class="slide_image_4"></div>
+                </div>
+                <div class="slide_wrapper_5 slide_wrapper">
+                    <div class="slide_image_5"></div>
+                </div>
+                <div class="slide_wrapper_6 slide_wrapper">
+                    <div class="slide_image_6"></div>
+                </div>
+
+                <p>Here at Dip & Sip we
+                    believe that every cup of tea counts. Every cup you
+                    drink means we’re able to keep doing the good stuff
+                    to support people and the planet. That’s why all our
+                    products are made with pure, natural ingredients
+                    and a clear conscience.
+                </p>
+                <p>Our responsible sourcing program, which aims to improve the lives of the
+                    communities from which we source. We do this through improving access 
+                    to water and sanitation, empowering women, and enhancing incomes and 
+                    resilience through income diversification and sustainable farming practices.
+                </p>
+                <p>
+                    We are helping to conserve our planet by keeping the environment front of 
+                    mind in everything we do. We constantly challenge our thinking to improve 
+                    our operations and reduce our footprint. Starting by becoming carbon neutral 
+                    in our operations and supply chain, and optimising our packaging, we will enable 
+                    more people to access sustainably produced drinks.                    
+                </p>
+            </div>
+            <div class="faqs">
+                <h1>FREQUENTLY ASKED<br>QUESTIONS</h1> 
+                <div class="accordion">
+                    <div class="accordion_item">
+                        <div class="accordion_header" onclick="toggleIcon(this)">
+                            <h4>How do I brew the perfect cup of black tea?</h4>
+                            <i class=" fas fa-plus"></i>
+                        </div>
+                        <div class="accordion_content">
+                            <div class="acc_line"></div>
+                            <p>Follow these simple steps to ensure that the tea you serve is perfect every time.<br>
+                                1. Only use freshly drawn cold water, ensure that kettles or water boilers are de-scaled 
+                                regularly and that teapots are spotlessly clean.<br>
+                                2. Teapots should be warmed with hot water, which is then poured away.<br>
+                                3. Use the recommended number of tea bags or one teaspoon of loose tea per cup. 
+                                For one person use a 300mL tea pot, for two persons a 600mL tea pot is recommended.<br>
+                                4. Water should always be freshly boiled and boiling when added to black tea.<br>
+                                5. Leave to brew for 3-5 minutes before serving. Stir before serving.<br>
+                                6. Pour a little milk into each cup before pouring the tea through a strainer if necessary, 
+                                and sweeten as required.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="accordion_header" onclick="toggleIcon(this)">
+                            <h4>What is the optimal water temperature?</h4>
+                            <i class=" fas fa-plus"></i>
+                        </div>
+                        <div class="accordion_content">
+                            <div class="acc_line"></div>
+                            <p>Water should always be freshly boiled and boiling when added to tea.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="accordion_header" onclick="toggleIcon(this)">
+                            <h4>What are the best teas to drink with milk & sugar?</h4>
+                            <i class=" fas fa-plus"></i>
+                        </div>
+                        <div class="accordion_content">
+                            <div class="acc_line"></div>
+                            <p>If you like to add milk and sugar, choose a black tea (you should never add milk to green tea). 
+                                Often the stronger blends like Russian Carravan and Pure Earl Grey are better with milk but 
+                                if your personal preference is for weaker tea then most black tea will be suitable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="accordion_header" onclick="toggleIcon(this)">
+                            <h4>What is organic tea?</h4>
+                            <i class=" fas fa-plus"></i>
+                        </div>
+                        <div class="accordion_content">
+                            <div class="acc_line"></div>
+                            <p>Organic tea is tea that's grown using strictly natural methods, 
+                                meaning the leaves and plants aren't exposed to synthetic fertilisers, 
+                                pesticides, or chemical additives. It's produced using organic farming 
+                                practices like crop rotation, composting, and the use of beneficial insects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <img class="footer_logo" src="asset/D&S_Logo_1.png">
+            <div class="container">
+                <div class="kit_container">
+                    <div class="kit">
+                        <div class="contact-form">
+                            <h3>KEEP IN TOUCH</h3>
+                            <form class="footer_form">
+                                <input type="email" id="email" placeholder="E-mail" required>
+                                <input type="submit" id="submit">
+                            </form>
+                        </div> 
+                        <div class="links">
+                            <nav>
+                                <ul>
+                                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>               
+                        <div class="line_m"></div>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="product.html">Our Teas</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="">FAQS</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="line_wrapper">
+                <div class="line"></div>
+                <div class="reserve_container">
+                    <p>All rights reserved ...</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="about.js"></script> 
+    </body>
+</html>
