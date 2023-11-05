@@ -14,6 +14,4 @@ I not only successfully created a website that closely resembles the prototypes 
 
 During the process, I found myself spending more time than expected on the web design stage and revisiting the prototypes multiple times to adjust and improve the layouts. This resulted in an extended timeline.
 
-The only error that I couldn't fix on the website is in the shopping cart. It doesn't display the shopping items and total price correctly. If I had more time, I could have revisited it and conducted further research to resolve the problem.
-
 Overall, I am quite happy with the final product. This project has showcased my skills and knowledge of the two courses: Visual Communication Design and Interaction Design.
